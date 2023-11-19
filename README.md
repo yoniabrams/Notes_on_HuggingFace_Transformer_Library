@@ -114,7 +114,7 @@ classifier('Paris is the <mask> of France.')
 <br><br>
 10. `'zero-shot-classification'`
 - The process by which a model can classify data into multiple classes without any specific training examples for those classes.
-- An example would help here. This example is taken from Huggin Face's page on [Zero-Shot Classification](https://huggingface.co/tasks/zero-shot-classification):
+- An example would help here. This example is taken from Hugging Face's page on [Zero-Shot Classification](https://huggingface.co/tasks/zero-shot-classification):
 ```python
 task = 'zero-shot-classification'
 
@@ -304,7 +304,7 @@ Steps for finetuning a model:
 - When we speak about finetuning a model, we usually mean  that you have a dataset for which you'd like to tune the model's performance.
 - Therefore, you need to ensure that the dataset is prepared. 
 
-2. Load a pretrained tokenizer and tokenizer your dataset to get the encodings
+2. Load a pretrained tokenizer and tokenize your dataset to get the encodings
 
 3. If you're using PyTorch, prepare the PyTorch dataset with the encodings from above.
 
@@ -314,8 +314,8 @@ Steps for finetuning a model:
    1. Either: Load the `Trainer` and `TrainerArguments` classes from the `transformers` library
    2. Or: Use a native PyTorch training loop
 
-**Finetuning using Trainer and TrainingArguments**
-According to the Hugging Face [documentation](https://huggingface.co/docs/transformers/main_classes/trainer), you have to create a `TrainingArguments` object before instantiating your `Trainer` as it allows you to access all the points of customization during training. Meaning, if you want to customize your training when you implement it with `Trainer` you have to be able to access the customizations in the first place.
+**Finetuning using Trainer and TrainingArguments**<br>
+- According to the Hugging Face [documentation](https://huggingface.co/docs/transformers/main_classes/trainer), you have to create a `TrainingArguments` object before instantiating your `Trainer` as it allows you to access all the points of customization during training. Meaning, if you want to customize your training when you implement it with `Trainer` you have to be able to access the customizations in the first place.
 
 Let's look at an implementation of this:
 ```python
