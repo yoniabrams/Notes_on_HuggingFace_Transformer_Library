@@ -1,5 +1,7 @@
 # Notes on using Hugging Face's Transformer Library
 
+Thanks to the folks out at **[AssemblyAI](https://www.assemblyai.com/)** for the incredible tutorials, particularly the one which inspired the structure and much of the content of the below. Find that video [here](https://www.youtube.com/watch?v=QEaBAZQCtwE) and the rest of their videos [here](https://www.youtube.com/@AssemblyAI).
+
 ## Installation
 It's simple; type the following into your command line
 ```commandline
